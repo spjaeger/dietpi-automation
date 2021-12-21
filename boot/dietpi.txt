@@ -8,17 +8,17 @@
 # By setting this to "1" you accept the DietPi GPLv2 license and skip the related interactive dialog.
 # - Full license text: /boot/dietpi-LICENSE.txt
 # - This setting is ignored (and assumed to be affirmative) if AUTO_SETUP_AUTOMATED=1
-AUTO_SETUP_ACCEPT_LICENSE=0
+AUTO_SETUP_ACCEPT_LICENSE=1
 
 ##### Language/Regional Options #####
 # Locale: eg: "en_GB.UTF-8" / "de_DE.UTF-8" | One entry and UTF-8 ONLY!
 AUTO_SETUP_LOCALE=C.UTF-8
 
 # Keyboard Layout eg: "gb" / "us" / "de" / "fr"
-AUTO_SETUP_KEYBOARD_LAYOUT=gb
+AUTO_SETUP_KEYBOARD_LAYOUT=de
 
 # Timezone eg: "Europe/London" / "America/New_York" | Full list (TZ*): https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-AUTO_SETUP_TIMEZONE=Europe/London
+AUTO_SETUP_TIMEZONE=Europe/Berlin
 
 ##### Network Options #####
 # Enable Ethernet or WiFi adapter: 1=enable | 0=disable
@@ -57,7 +57,7 @@ AUTO_SETUP_SWAPFILE_SIZE=1
 AUTO_SETUP_SWAPFILE_LOCATION=/var/swap
 
 # Set to "1" to disable HDMI/video output and framebuffers on Raspberry Pi, to reduce power consumption and memory usage: Works on RPi only!
-AUTO_SETUP_HEADLESS=0
+AUTO_SETUP_HEADLESS=1
 
 # Unmask (enable) systemd-logind service (including dbus), which is masked by default on DietPi
 AUTO_UNMASK_LOGIND=0
@@ -80,7 +80,7 @@ AUTO_SETUP_BACKUP_RESTORE=0
 
 ##### Software Options #####
 # SSH server choice: 0=none/custom | -1=Dropbear | -2=OpenSSH
-AUTO_SETUP_SSH_SERVER_INDEX=-1
+AUTO_SETUP_SSH_SERVER_INDEX=-2
 
 # Logging mode choice: 0=none/custom | -1=RAMlog 1h clear | -2=RAMlog 1h save clear | -3=rsyslog + logrotate
 AUTO_SETUP_LOGGING_INDEX=-1
