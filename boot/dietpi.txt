@@ -131,6 +131,15 @@ AUTO_SETUP_GLOBAL_PASSWORD=dietpi
 # - E.g. the following (without the leading "#") will install the LXDE desktop automatically on first boot:
 #AUTO_SETUP_INSTALL_SOFTWARE_ID=23
 
+# Docker
+AUTO_SETUP_INSTALL_SOFTWARE_ID=162
+
+# Docker-Compose
+AUTO_SETUP_INSTALL_SOFTWARE_ID=134
+
+# Portainer
+AUTO_SETUP_INSTALL_SOFTWARE_ID=185
+
 #------------------------------------------------------------------------------------------------------
 ##### Misc DietPi program settings #####
 #------------------------------------------------------------------------------------------------------
