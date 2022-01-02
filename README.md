@@ -10,6 +10,8 @@ Timezone: Europe/Berlin<br />
 ## Software Options
 SSH server choice: OpenSSH (SFTP & SCP support)
 
-Docker <br />
-Docker-Compose <br />
-Portainer <br />
+## Software (automatically installed)
+
+* Docker
+* Docker-Compose
+* Portainer
