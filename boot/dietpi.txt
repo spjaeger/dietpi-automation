@@ -24,15 +24,15 @@ AUTO_SETUP_TIMEZONE=Europe/Berlin
 # Enable Ethernet or WiFi adapter: 1=enable | 0=disable
 # - If both Ethernet and WiFi are enabled, WiFi will take priority and Ethernet will be disabled.
 # - If using WiFi, please edit dietpi-wifi.txt to pre-enter credentials.
-AUTO_SETUP_NET_ETHERNET_ENABLED=1
-AUTO_SETUP_NET_WIFI_ENABLED=0
+AUTO_SETUP_NET_ETHERNET_ENABLED=0
+AUTO_SETUP_NET_WIFI_ENABLED=1
 
 # Force Ethernet speeds: 0=automatic speed | 10 = 10Mbit | 100 = 100Mbit etc
 # - This is mainly aimed at PINE A64 which may have an HW issue that causes unstable 1Gbit link.
 AUTO_SETUP_NET_ETH_FORCE_SPEED=0
 
 # WiFi country code: 2 uppercase character value (e.g. GB US DE JP): https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-AUTO_SETUP_NET_WIFI_COUNTRY_CODE=GB
+AUTO_SETUP_NET_WIFI_COUNTRY_CODE=DE
 
 # Enter your static network details below, if applicable.
 AUTO_SETUP_NET_USESTATIC=0
@@ -83,7 +83,7 @@ AUTO_SETUP_BACKUP_RESTORE=0
 AUTO_SETUP_SSH_SERVER_INDEX=-2
 
 # Logging mode choice: 0=none/custom | -1=RAMlog 1h clear | -2=RAMlog 1h save clear | -3=rsyslog + logrotate
-AUTO_SETUP_LOGGING_INDEX=-1
+AUTO_SETUP_LOGGING_INDEX=-2
 # RAMlog max tmpfs size (MB). 50MB should be fine for single use. 200MB+ for heavy webserver and access log etc.
 AUTO_SETUP_RAMLOG_MAXSIZE=50
 
@@ -116,7 +116,7 @@ AUTO_SETUP_AUTOSTART_LOGIN_USER=root
 # - Setting this to "1" is required for below settings to take effect
 # - It is HIGHLY recommended to also set CONFIG_BOOT_WAIT_FOR_NETWORK=2, to force infinite wait for network connection during boot and prevent connection timeout errors.
 # - Setting this to "1" indicates that you accept the DietPi GPLv2 license, available at /boot/dietpi-LICENSE.txt, superseding any setting of AUTO_SETUP_ACCEPT_LICENSE.
-AUTO_SETUP_AUTOMATED=0
+AUTO_SETUP_AUTOMATED=1
 
 # Global Password to be applied for the system
 # - Affects "root" and "dietpi" users login passwords and is used by dietpi-software as default for software installs which require a password.
@@ -211,7 +211,7 @@ CONFIG_SOUNDCARD=none
 CONFIG_LCDPANEL=none
 
 # IPv6
-CONFIG_ENABLE_IPV6=1
+CONFIG_ENABLE_IPV6=0
 
 # APT mirrors which are applied to /etc/apt/sources.list | Values here will also be applied during 1st run setup
 # - Raspbian: https://www.raspbian.org/RaspbianMirrors
@@ -223,6 +223,13 @@ CONFIG_APT_DEBIAN_MIRROR=https://deb.debian.org/debian/
 # - For a full list, please see: https://www.ntppool.org/zone/@
 # - Please remove the initial integer and full stop from the value (removing "0."), eg: debian.pool.ntp.org
 CONFIG_NTP_MIRROR=debian.pool.ntp.org
+
+##### Non-interactive Firstrun Setup
+# On first login, run update, initial setup and software installs without any user input
+
+# Force infinite wait for network connection during boot and prevent connection timeout errors.
+# (Recommended for the Non-interactive Firstrun Setup, which on first login, run update, initial setup and software installs without any user input.)
+CONFIG_BOOT_WAIT_FOR_NETWORK=2
 
 #------------------------------------------------------------------------------------------------------
 ##### DietPi-Software settings #####
