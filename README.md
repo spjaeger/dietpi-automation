@@ -11,7 +11,8 @@ Timezone: Europe/Berlin<br />
  * IPv6 disabled
 
 ## Software Options
-SSH server choice: OpenSSH (SFTP & SCP support)
+SSH server choice: OpenSSH (SFTP & SCP support) <br />
+Logging mode choice: RAMlog 1h save clear <br />
 
 ## Software (automatically installed)
 
