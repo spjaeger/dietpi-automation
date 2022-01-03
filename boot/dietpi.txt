@@ -224,11 +224,8 @@ CONFIG_APT_DEBIAN_MIRROR=https://deb.debian.org/debian/
 # - Please remove the initial integer and full stop from the value (removing "0."), eg: debian.pool.ntp.org
 CONFIG_NTP_MIRROR=debian.pool.ntp.org
 
-##### Non-interactive Firstrun Setup
-# On first login, run update, initial setup and software installs without any user input
-
 # Force infinite wait for network connection during boot and prevent connection timeout errors.
-# (Recommended for the Non-interactive Firstrun Setup, which on first login, run update, initial setup and software installs without any user input.)
+# (Recommended for the Non-interactive Firstrun Setup, which on first login, runs update, initial setup and software installs without any user input.)
 CONFIG_BOOT_WAIT_FOR_NETWORK=2
 
 #------------------------------------------------------------------------------------------------------
